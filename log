@@ -36,3 +36,23 @@ exercises.c:18:4: error: statement with no effect [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 0c97171
+Fri 10 Mar 2023 10:31:58 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘swap’:
+exercises.c:17:4: error: comparison between pointer and integer [-Werror]
+   17 |   a==bcopia;
+      |    ^~
+exercises.c:17:4: error: statement with no effect [-Werror=unused-value]
+   17 |   a==bcopia;
+      |   ~^~~~~~~~
+exercises.c:18:4: error: comparison between pointer and integer [-Werror]
+   18 |   b==acopia;
+      |    ^~
+exercises.c:18:4: error: statement with no effect [-Werror=unused-value]
+   18 |   b==acopia;
+      |   ~^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7ed8d60
