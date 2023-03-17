@@ -83,11 +83,12 @@ typedef struct {
 
 Vector * crearVector(int n) {
   Vector *local=(Vector *) malloc(sizeof(Vector) * n);
+  local->capacidad = n;
+    local->datos = (int*) calloc(n, sizeof(int));
   if(local==NULL)
   {
     return NULL;
   }
-  //local->capacidad=n;
    return local;
 }
 
