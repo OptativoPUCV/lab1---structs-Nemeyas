@@ -550,3 +550,14 @@ exercises.c:91:11: error: returning ‘int *’ from a function with incompatibl
 cc1: all warnings being treated as errors
 Compilation failed
 6735894
+Fri 17 Mar 2023 04:12:50 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:90:9: error: ‘local’ is a pointer; did you mean to use ‘->’?
+   90 |   *local.capacidad=n;
+      |         ^
+      |         ->
+Compilation failed
+ec174be
