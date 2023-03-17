@@ -285,3 +285,23 @@ exercises.c:109:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 66a1e25
+Fri 17 Mar 2023 03:58:27 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:108:14: error: ‘Vector’ has no member named ‘dato’; did you mean ‘datos’?
+  108 |    return v->dato[i];
+      |              ^~~~
+      |              datos
+exercises.c: In function ‘sumaV’:
+exercises.c:118:1: error: expected identifier before ‘}’ token
+  118 | }
+      | ^
+exercises.c: In function ‘obtenerValor’:
+exercises.c:109:1: error: control reaches end of non-void function [-Werror=return-type]
+  109 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+e8a63b0
