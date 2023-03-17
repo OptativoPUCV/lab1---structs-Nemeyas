@@ -62,7 +62,7 @@ Persona* crearPersona(char nombre[], char rut[], int edad) {
   }
    //asignar valores de entrada a los campos de p
   strncpy(p->nombre, nombre,30);
-  strncpy(p->rut, rut);
+  strncpy(p->rut, rut,11);
     p->edad=edad;
   
    return p;
