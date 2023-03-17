@@ -678,3 +678,14 @@ exercises.c:130:11: error: assignment to ‘int *’ from ‘int’ makes pointe
 cc1: all warnings being treated as errors
 Compilation failed
 65f1c08
+Fri 17 Mar 2023 04:27:18 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:130:11: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  130 |   c->datos= (a1+a2)+(b1+b2);
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+c96dbfc
