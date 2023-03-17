@@ -625,3 +625,36 @@ exercises.c:139:3: error: implicit declaration of function ‘destruirVector’ 
 cc1: all warnings being treated as errors
 Compilation failed
 05080fc
+Fri 17 Mar 2023 04:23:58 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:130:15: error: too many arguments to function ‘crearVector’
+  130 |   Vector* a = crearVector(a1, a2);
+      |               ^~~~~~~~~~~
+exercises.c:84:10: note: declared here
+   84 | Vector * crearVector(int n) {
+      |          ^~~~~~~~~~~
+exercises.c:131:15: error: too many arguments to function ‘crearVector’
+  131 |   Vector* b = crearVector(b1, b2);
+      |               ^~~~~~~~~~~
+exercises.c:84:10: note: declared here
+   84 | Vector * crearVector(int n) {
+      |          ^~~~~~~~~~~
+exercises.c:136:23: error: invalid operands to binary + (have ‘int *’ and ‘int *’)
+  136 |   c->datos = a->datos + b->datos;
+      |              ~~~~~~~~ ^ ~~~~~~~~
+      |               |          |
+      |               int *      int *
+exercises.c:137:23: error: invalid operands to binary + (have ‘int *’ and ‘int *’)
+  137 |   c->datos = a->datos + b->datos;
+      |              ~~~~~~~~ ^ ~~~~~~~~
+      |               |          |
+      |               int *      int *
+exercises.c:139:3: error: implicit declaration of function ‘destruirVector’ [-Werror=implicit-function-declaration]
+  139 |   destruirVector(a);
+      |   ^~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f3dd9bb

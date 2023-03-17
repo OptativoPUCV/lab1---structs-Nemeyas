@@ -133,8 +133,8 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
     printf("Error: no se pudieron crear los vectores a y b\n");
     return;
   }
-  c->x = a->x + b->x;
-  c->y = a->y + b->y;
+  c->datos = a->datos + b->datos;
+  c->datos = a->datos + b->datos;
   
   destruirVector(a);
   destruirVector(b);
