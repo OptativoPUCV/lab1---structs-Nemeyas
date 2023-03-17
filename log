@@ -584,3 +584,44 @@ Fri 17 Mar 2023 04:18:21 AM UTC:
  tests:  5|3
 total_score: 40/70
 eec6195
+Fri 17 Mar 2023 04:23:19 AM UTC: 
+ exercises.c | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:130:15: error: too many arguments to function ‘crearVector’
+  130 |   Vector* a = crearVector(a1, a2);
+      |               ^~~~~~~~~~~
+exercises.c:84:10: note: declared here
+   84 | Vector * crearVector(int n) {
+      |          ^~~~~~~~~~~
+exercises.c:131:15: error: too many arguments to function ‘crearVector’
+  131 |   Vector* b = crearVector(b1, b2);
+      |               ^~~~~~~~~~~
+exercises.c:84:10: note: declared here
+   84 | Vector * crearVector(int n) {
+      |          ^~~~~~~~~~~
+exercises.c:136:4: error: ‘Vector’ has no member named ‘x’
+  136 |   c->x = a->x + b->x;
+      |    ^~
+exercises.c:136:11: error: ‘Vector’ has no member named ‘x’
+  136 |   c->x = a->x + b->x;
+      |           ^~
+exercises.c:136:18: error: ‘Vector’ has no member named ‘x’
+  136 |   c->x = a->x + b->x;
+      |                  ^~
+exercises.c:137:4: error: ‘Vector’ has no member named ‘y’
+  137 |   c->y = a->y + b->y;
+      |    ^~
+exercises.c:137:11: error: ‘Vector’ has no member named ‘y’
+  137 |   c->y = a->y + b->y;
+      |           ^~
+exercises.c:137:18: error: ‘Vector’ has no member named ‘y’
+  137 |   c->y = a->y + b->y;
+      |                  ^~
+exercises.c:139:3: error: implicit declaration of function ‘destruirVector’ [-Werror=implicit-function-declaration]
+  139 |   destruirVector(a);
+      |   ^~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+05080fc
