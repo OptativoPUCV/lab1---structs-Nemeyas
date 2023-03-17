@@ -658,3 +658,9 @@ exercises.c:139:3: error: implicit declaration of function ‘destruirVector’ 
 cc1: all warnings being treated as errors
 Compilation failed
 f3dd9bb
+Fri 17 Mar 2023 04:24:23 AM UTC: 
+ exercises.c | 10 ----------
+ 1 file changed, 10 deletions(-)
+ tests:  5|3
+total_score: 40/70
+bb86bb9
