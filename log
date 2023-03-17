@@ -529,3 +529,24 @@ exercises.c:93:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 9753ce7
+Fri 17 Mar 2023 04:12:37 AM UTC: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:85:3: error: unknown type name ‘vector’; did you mean ‘Vector’?
+   85 |   vector *local=(Vector *) malloc(sizeof(Vector) * n);
+      |   ^~~~~~
+      |   Vector
+exercises.c:85:17: error: initialization of ‘int *’ from incompatible pointer type ‘Vector *’ [-Werror=incompatible-pointer-types]
+   85 |   vector *local=(Vector *) malloc(sizeof(Vector) * n);
+      |                 ^
+exercises.c:90:9: error: request for member ‘capacidad’ in something not a structure or union
+   90 |   *local.capacidad=n;
+      |         ^
+exercises.c:91:11: error: returning ‘int *’ from a function with incompatible return type ‘Vector *’ [-Werror=incompatible-pointer-types]
+   91 |    return local;
+      |           ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6735894
