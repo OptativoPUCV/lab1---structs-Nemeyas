@@ -87,7 +87,7 @@ Vector * crearVector(int n) {
   {
     return NULL;
   }
-  local->capacidad=n;
+  //local->capacidad=n;
    return local;
 }
 
