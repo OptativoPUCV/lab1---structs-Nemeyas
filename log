@@ -561,3 +561,8 @@ exercises.c:90:9: error: ‘local’ is a pointer; did you mean to use ‘->’?
       |         ->
 Compilation failed
 ec174be
+Fri 17 Mar 2023 04:13:11 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+b461002
