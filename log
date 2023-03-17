@@ -491,3 +491,22 @@ exercises.c:85:3: error: ‘local’ undeclared (first use in this function)
 exercises.c:85:3: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 eccf04a
+Fri 17 Mar 2023 04:11:06 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:85:16: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+   85 |   Vector *local->capacidad=n;
+      |                ^~
+exercises.c:85:16: error: expected expression before ‘->’ token
+exercises.c:86:3: error: ‘local’ undeclared (first use in this function)
+   86 |   local=(Vector *) malloc(sizeof(Vector) * n);
+      |   ^~~~~
+exercises.c:86:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:93:1: error: control reaches end of non-void function [-Werror=return-type]
+   93 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+3f91ec0
