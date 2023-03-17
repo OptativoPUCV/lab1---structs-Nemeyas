@@ -56,9 +56,15 @@ typedef struct {
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
    Persona * p = (Persona *) malloc(sizeof(Persona));
+  if(p=NULL)
+  {
+    return NULL;
+  }
    //asignar valores de entrada a los campos de p
-
-
+  strncpy(p->nombre, nombre, 30);
+  strncpy(p->rut, rut, 11);
+    p->edad=edad;
+  
    return p;
 }
 
@@ -76,7 +82,12 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-   return NULL;
+  Vector * local=(vector *) malloc(sizeof(vector) * n);
+  if(local=NULL)
+  {
+    return NULL;
+  }
+   return local;
 }
 
 /*
@@ -85,7 +96,7 @@ Programe la función void asignarValor(Vector * v, int i, int valor),
 la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor) {
-
+  v->datos[i]=valor
 }
 
 /*
@@ -94,7 +105,7 @@ Programe la función int obtenerValor(Vector * v, int i),
 la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) {
-   return 0;
+   return v->dato[i];
 }
 
 /*
@@ -103,7 +114,7 @@ Función que suma los vectores `a` y `b` y
 actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
-
+    a->
 }
 
 /*

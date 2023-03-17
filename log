@@ -92,3 +92,46 @@ Thu 16 Mar 2023 07:19:59 PM UTC:
  tests:  2|5
 total_score: 20/70
 0c14fd3
+Fri 17 Mar 2023 03:55:23 AM UTC: 
+ exercises.c | 19 +++++++++++++++----
+ 1 file changed, 15 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:59:6: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   59 |   if(p=NULL)
+      |      ^
+exercises.c: In function ‘crearVector’:
+exercises.c:85:19: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+   85 |   Vector * local=(vector *) malloc(sizeof(vector) * n);
+      |                   ^~~~~~
+      |                   Vector
+exercises.c:85:19: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:85:27: error: expected expression before ‘)’ token
+   85 |   Vector * local=(vector *) malloc(sizeof(vector) * n);
+      |                           ^
+exercises.c:86:6: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   86 |   if(local=NULL)
+      |      ^~~~~
+exercises.c: In function ‘asignarValor’:
+exercises.c:99:20: error: expected ‘;’ before ‘}’ token
+   99 |   v->datos[i]=valor
+      |                    ^
+      |                    ;
+  100 | }
+      | ~                   
+exercises.c: In function ‘obtenerValor’:
+exercises.c:108:14: error: ‘Vector’ has no member named ‘dato’; did you mean ‘datos’?
+  108 |    return v->dato[i];
+      |              ^~~~
+      |              datos
+exercises.c: In function ‘sumaV’:
+exercises.c:118:1: error: expected identifier before ‘}’ token
+  118 | }
+      | ^
+exercises.c: In function ‘obtenerValor’:
+exercises.c:109:1: error: control reaches end of non-void function [-Werror=return-type]
+  109 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+e6e584b
